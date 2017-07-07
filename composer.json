@@ -1,0 +1,30 @@
+{
+  "name" : "madco/madcobundle",
+  "description" : "A demo bundle",
+  "type" : "symfony-bundle",
+  "authors" : [{
+    "name" : "David",
+    "email" : "daalcala@gmail.com"
+  }],
+  "keywords" : [
+    "crud"
+  ],
+  "license" : [
+    "MIT"
+  ],
+  "require" : {
+  },
+  "autoload" : {
+    "psr-0" : {
+      "Company\\DemoBundle" : ""
+    }
+  },
+  "target-dir" : "Madco/MadcoBundle",
+  "repositories" : [{
+  }],
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "some_version-dev"
+    }
+  }
+}
