@@ -1,5 +1,5 @@
 {
-  "name" : "madco/madcobundle",
+  "name" : "madcode/madcodebundle",
   "description" : "A demo bundle",
   "type" : "symfony-bundle",
   "authors" : [{
@@ -16,10 +16,10 @@
   },
   "autoload" : {
     "psr-0" : {
-      "Company\\DemoBundle" : ""
+      "Madcode\\MadcodeBundle" : ""
     }
   },
-  "target-dir" : "Madco/MadcoBundle",
+  "target-dir" : "Madcode/MadcodeBundle",
   "repositories" : [{
   }],
   "extra" : {

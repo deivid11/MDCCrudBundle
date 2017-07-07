@@ -53,38 +53,6 @@ abstract class CrudController extends Controller
 	}
 
 	/**
-	 * Takes the entity metadata introspected via Doctrine and completes its
-	 * contents to simplify data processing for the rest of the application.
-	 *
-	 * @param ClassMetadata $entityMetadata The entity metadata introspected via Doctrine
-	 *
-	 * @return array The entity properties metadata provided by Doctrine
-	 */
-	private function processEntityPropertiesMetadata(ClassMetadata $entityMetadata)
-	{
-		$entityPropertiesMetadata = array();
-
-		// introspect regular entity fields
-		foreach ($entityMetadata->fieldMappings as $fieldName => $fieldMetadata) {
-			$entityPropertiesMetadata[$fieldName] = $fieldMetadata;
-		}
-
-		// introspect fields for entity associations
-		foreach ($entityMetadata->associationMappings as $fieldName => $associationMetadata) {
-			$entityPropertiesMetadata[$fieldName] = array_merge($associationMetadata, array(
-				'type' => 'association',
-				'associationType' => $associationMetadata['type'],
-			));
-
-			// associations different from *-to-one cannot be sorted
-			if ($associationMetadata['type'] & ClassMetadata::TO_MANY) {
-				$entityPropertiesMetadata[$fieldName]['sortable'] = false;
-			}
-		}
-
-		return $entityPropertiesMetadata;
-	}
-	/**
 	 * @return string
 	 */
 	public function getBaseTwigs(){
