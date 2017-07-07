@@ -2,6 +2,7 @@
   "name" : "madcode/madcodebundle",
   "description" : "A bundle to perform automated crud actions to entities, includes pagination.",
   "type" : "symfony-bundle",
+  "minimum-stability":"dev",
   "authors" : [{
     "name" : "David",
     "email" : "daalcala@gmail.com"
