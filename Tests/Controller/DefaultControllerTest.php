@@ -1,6 +1,6 @@
 <?php
 
-namespace Madcode\MadcodeBundle\Tests\Controller;
+namespace Madcode\MDCCrudBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

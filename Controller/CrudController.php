@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Controller;
+namespace Madcode\MDCCrudBundle\DependencyInjection;
 
 use Doctrine\ORM\Mapping\ClassMetadata;
 use Doctrine\ORM\EntityRepository;

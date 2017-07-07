@@ -1,5 +1,5 @@
 {
-  "name" : "madcode/madcodebundle",
+  "name" : "madcode/mdccrudbundle",
   "description" : "A bundle to perform automated crud actions to entities, includes pagination.",
   "type" : "symfony-bundle",
   "minimum-stability":"dev",
@@ -19,7 +19,7 @@
     "twig/twig":                "~1.12|~2"
   },
   "autoload": {
-    "psr-4": { "Madcode\\MadcodeBundle\\": "" },
+    "psr-4": { "Madcode\\MDCCrudBundle\\": "" },
     "exclude-from-classmap": ["/Tests/"]
   },
   "extra": {

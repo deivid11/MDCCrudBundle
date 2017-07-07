@@ -1,4 +1,4 @@
 services:
 #    madcode.example:
-#        class: Madcode\MadcodeBundle\Example
+#        class: Madcode\MDCCrudBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
