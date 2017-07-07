@@ -18,12 +18,10 @@
     "symfony/framework-bundle": "~2.7|~3.0",
     "twig/twig":                "~1.12|~2"
   },
-  "autoload" : {
-    "psr-0" : {
-      "Madcode\\MadcodeBundle" : ""
-    }
+  "autoload": {
+    "psr-4": { "Madcode\\MadcodeBundle\\": "" },
+    "exclude-from-classmap": ["/Tests/"]
   },
-  "target-dir" : "Madcode/MadcodeBundle",
   "extra": {
     "branch-alias": {
       "dev-master": "1.0.x-dev"
