@@ -1,6 +1,6 @@
 <?php
 
-namespace Madcode\MDCCrudBundle\DependencyInjection;
+namespace Madcode\MDCCrudBundle\Controller;
 
 use Doctrine\ORM\Mapping\ClassMetadata;
 use Doctrine\ORM\EntityRepository;
@@ -50,13 +50,14 @@ abstract class CrudController extends Controller
 			$fieldsArray[] =["name"=>$field, "type"=>$type];
 		}
 		return $fieldsArray;
+
 	}
 
 	/**
 	 * @return string
 	 */
 	public function getBaseTwigs(){
-		return "@App/default";
+		return "@MDCCrud/default";
 	}
 
 	public function prePersistNew($entity, Request $request){
@@ -91,6 +92,7 @@ abstract class CrudController extends Controller
 	 */
 	public function indexAction()
 	{
+
 		$entities = $this->getRepository()->findAll();
 
 		return $this->render($this->getBaseTwigs().'/index.html.twig', array(

@@ -1,4 +1,6 @@
 services:
-#    madcode.example:
-#        class: Madcode\MDCCrudBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    mdccrud.twig_extension:
+        class: Madcode\MDCCrudBundle\Twig\CrudExtension
+        arguments: ["@property_accessor"]
+        tags:
+            - { name: twig.extension }
